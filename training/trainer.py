@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
-from transformers import AdamW, get_scheduler
+from transformers.optimization import AdamW, get_scheduler
 from loguru import logger
 from tqdm import tqdm
 from typing import Dict, List

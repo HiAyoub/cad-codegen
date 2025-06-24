@@ -1,10 +1,12 @@
 defaults:
-  - model: base
+  - base
   - _self_
 
 hardware:
   use_gpu: ${oc.env:USE_GPU,False}  
-  device: ${oc.env:DEVICE,"auto"}    
+  device: ${oc.env:DEVICE,"auto"}  
+  gpu_name: null
+  cuda_version: null  
 
 training:
   learning_rate: ${oc.env:LR,5e-5}
@@ -16,3 +18,5 @@ data:
   train_samples: "train[:100%]"  
   test_samples: "test[:20%]"
   max_length: 512
+
+use_wandb: false

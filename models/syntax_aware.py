@@ -12,15 +12,15 @@ class CADCodeGenerator(nn.Module):
     
     def __init__(self):
         super().__init__()
-        self.vision_encoder = EnhancedVisionEncoder()
-        self.code_decoder = SyntaxAwareDecoder()
+        self.vision_encoder = EnhancedVisionEncoder(config.vision_encoder)
+        self.code_decoder = SyntaxAwareDecoder(config.code_decoder)
         
         # Cross-modal projection
         self.projection = nn.Sequential(
             nn.Linear(768, 768),
             nn.GELU(),
             nn.LayerNorm(768)
-        
+        )
         # Syntax attention gate
         self.syntax_gate = nn.Linear(768 * 2, 1)
         

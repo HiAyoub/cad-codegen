@@ -1,0 +1,17 @@
+logging:
+  log_level: INFO
+  log_format: detailed
+  log_dir: ./logs
+hardware:
+  use_gpu: ${oc.env:USE_GPU,False}
+  device: ${oc.env:DEVICE,"auto"}
+  gpu_name: null
+training:
+  learning_rate: ${oc.env:LR,5e-5}
+  batch_size: ${oc.env:BATCH_SIZE,16}
+  epochs: 10
+  mixed_precision: ${oc.env:MIXED_PREC,True}
+data:
+  train_samples: train[:100%]
+  test_samples: test[:20%]
+  max_length: 512

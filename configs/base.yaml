@@ -1,0 +1,4 @@
+logging:
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  log_format: "detailed"  # simple|detailed
+  log_dir: "./logs"
