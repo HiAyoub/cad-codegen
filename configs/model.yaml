@@ -1,0 +1,9 @@
+vision_encoder:
+  model_name: "google/vit-base-patch16-384"
+  pretrained: True
+  frozen_layers: 4
+  
+code_decoder:
+  model_name: "Salesforce/codet5-base"
+  pretrained: True
+  attention_heads: 8
