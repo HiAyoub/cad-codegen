@@ -106,18 +106,4 @@ Push to the branch
 
 Open a pull request
 
-text
 
-### Key Features of This README:
-1. **Visual Badges** - Immediately shows Python/PyTorch compatibility
-2. **Progressive Disclosure** - Starts with simplest working setup
-3. **Hardware Awareness** - Highlights auto-adaptation
-4. **Structured Commands** - Clear copy-paste friendly instructions
-5. **Configuration Visibility** - Shows where to modify settings
-6. **Project Map** - Helps navigate the codebase
-
-### Recommended Extras:
-1. Add a GIF showing sample input/output
-2. Include benchmark results (VSR/IoU metrics)
-3. Add a "Citing This Work" section if academic
-4. Link to Colab demo notebook if available
